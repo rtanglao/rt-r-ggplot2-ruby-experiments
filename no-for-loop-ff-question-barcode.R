@@ -22,7 +22,7 @@ reverse_csv_with_title_plus_content <- reverse_csv %>%
   mutate(tplusc = paste(title, content))
 os_colours_vector <- map_chr(reverse_csv$tags, getOSColour)
 question_colours_vector <- map_chr(reverse_csv_with_title_plus_content$tplusc,
-  ~{c(colours_array[(abs(digest::digest2int(.x)) %% 657) + 1])})
+  ~{colours_array[(abs(digest::digest2int(.x)) %% 657) + 1]})
 colours_vector <- c(rbind(os_colours_vector, question_colours_vector))
 p <- ggplot() + theme_void()
 p <- p + geom_vline(col = colours_vector, 
