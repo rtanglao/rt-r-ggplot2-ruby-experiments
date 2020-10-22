@@ -11,13 +11,8 @@ getOSColour <- function(.x) {
   if(str_detect(.x, windows_str)) os_colour <- "hotpink"
   return(os_colour)
 }
-getQuestionColour <- function(.x) {
-  question_colour <- abs(
-    digest::digest2int(.x)) %% 657 # 657 colors in r
-  return(c(colours_array[question_colour + 1]))
-}
-csv <- read.csv("https://raw.githubusercontent.com/rtanglao/rt-kits-api3/main/2020/2020-10-20-2020-10-20-firefox-creator-answers-desktop-all-locales.csv")
 
+csv <- read.csv("https://raw.githubusercontent.com/rtanglao/rt-kits-api3/main/2020/2020-10-20-2020-10-20-firefox-creator-answers-desktop-all-locales.csv")
 # see https://stackoverflow.com/questions/39975317/how-to-reverse-the-order-of-a-dataframe-in-r
 reverse_csv <- csv %>% map_df(rev)
 length <- nrow(reverse_csv)
@@ -26,9 +21,9 @@ size <- rep(c(4,2), length = length * 2)
 reverse_csv_with_title_plus_content <- reverse_csv %>% 
   mutate(tplusc = paste(title, content))
 os_colours_vector <- map_chr(reverse_csv$tags, getOSColour)
-question_colour_vector <- map_chr(reverse_csv_with_title_plus_content$tplusc, 
-                            getQuestionColour)
-colours_vector <- c(rbind(os_colours_vector, question_colour_vector))
+question_colours_vector <- map_chr(reverse_csv_with_title_plus_content$tplusc,
+  ~{c(colours_array[(abs(digest::digest2int(.x)) %% 657) + 1])})
+colours_vector <- c(rbind(os_colours_vector, question_colours_vector))
 p <- ggplot() + theme_void()
 p <- p + geom_vline(col = colours_vector, 
                     xintercept = xintercept, size = size)
