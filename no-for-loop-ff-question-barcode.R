@@ -11,7 +11,7 @@ getOSColour <- function(.x) {
   if(str_detect(.x, windows_str)) os_colour <- "hotpink"
   return(os_colour)
 }
-  getQuestionColour <- function(.x) {
+getQuestionColour <- function(.x) {
   question_colour <- abs(
     digest::digest2int(.x)) %% 657 # 657 colors in r
   return(c(colours_array[question_colour + 1]))
