@@ -2,14 +2,11 @@ library(tidyverse)
 colours_array <- colours()
 
 getOSColour <- function(.x) { 
-  os_colour <- "purple"
-  macos_str <- "mac-os|os-x|osx|macos"
-  windows_str <- "windows-7|windows-8|windows-10"
-  linux_str <- "linux|ubuntu|redhat|debian"
-  if(str_detect(.x, macos_str)) os_colour <- "blue"
-  if(str_detect(.x, linux_str)) os_colour <- "green"
-  if(str_detect(.x, windows_str)) os_colour <- "hotpink"
-  return(os_colour)
+  case_when(
+    str_detect(.x, "mac-os|os-x|osx|macos") ~ "blue",
+    str_detect(.x, "linux|ubuntu|redhat|debian") ~ "green",
+    str_detect(.x, "windows-7|windows-8|windows-10") ~ "hotpink"
+    TRUE ~ purple)
 }
 
 csv <- read.csv("https://raw.githubusercontent.com/rtanglao/rt-kits-api3/main/2020/2020-10-20-2020-10-20-firefox-creator-answers-desktop-all-locales.csv")
