@@ -6,7 +6,7 @@ getOSColour <- function(.x) {
     str_detect(.x, "mac-os|os-x|osx|macos") ~ "blue",
     str_detect(.x, "linux|ubuntu|redhat|debian") ~ "green",
     str_detect(.x, "windows-7|windows-8|windows-10") ~ "hotpink"
-    TRUE ~ purple)
+    TRUE ~ "purple")
 }
 
 csv <- read.csv("https://raw.githubusercontent.com/rtanglao/rt-kits-api3/main/2020/2020-10-20-2020-10-20-firefox-creator-answers-desktop-all-locales.csv")
