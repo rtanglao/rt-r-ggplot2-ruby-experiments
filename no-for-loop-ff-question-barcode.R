@@ -18,11 +18,10 @@ reverse_csv <- csv %>% map_df(rev)
 length <- nrow(reverse_csv)
 xintercept <- seq.int(by = 10, length = length * 2, from = 0)
 size <- rep(c(4,2), length = length * 2)
-reverse_csv_with_title_plus_content <- reverse_csv %>% 
-  mutate(tplusc = paste(title, content))
 os_colours_vector <- map_chr(reverse_csv$tags, getOSColour)
-question_colours_vector <- map_chr(reverse_csv_with_title_plus_content$tplusc,
-  ~{colours_array[(abs(digest::digest2int(.x)) %% 657) + 1]})
+question_colours_vector <- map2_chr(reverse_csv$title,
+                                    reverse_csv$content,
+  ~{colours_array[(abs(digest::digest2int(paste(.x, .y))) %% 657) + 1]})
 colours_vector <- c(rbind(os_colours_vector, question_colours_vector))
 p <- ggplot() + theme_void()
 p <- p + geom_vline(col = colours_vector, 
