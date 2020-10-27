@@ -85,7 +85,7 @@ main <- function() {
                       xintercept = xintercept,
                       size = size)
   png_filename <- sprintf(
-    "hour-%2.2d-%4.4d-%2.2d-%2.2d-firefox-creator-answers-desktop-all-locales.png",
+    "hour-%2.2d-%4.4d-%2.2d-%2.2d-firefox-desktop-all-locales.png",
     hour, year, month, day, year, month, day)
   ggsave(png_filename, p, width = 3.555555556, height = 3.555555556, 
          dpi = 72, limitsize = FALSE) # 3.555555556 = 256/72dpi

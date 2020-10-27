@@ -1,32 +1,27 @@
-# A time tibble: 4 x 12
+# A time tibble: 3 x 12
 # Index: created_time
        id created                   updated                  
     <dbl> <chr>                     <chr>                    
-1 1309272 2020-10-19 19:08:59 -0700 2020-10-20 06:43:27 -0700
-2 1309273 2020-10-19 19:47:39 -0700 2020-10-19 19:47:39 -0700
-3 1309274 2020-10-19 19:52:02 -0700 2020-10-19 19:56:52 -0700
-4 1309276 2020-10-19 19:58:27 -0700 2020-10-19 19:58:27 -0700
-  title                                                
-  <chr>                                                
-1 Constantly being prompted to update Firefox          
-2 Ubuntu opens portal everytime to open downloaded file
-3 Some tabs do not load                                
-4 gmail and zoom                                       
+1 1309431 2020-10-20 16:00:49 -0700 2020-10-20 16:00:49 -0700
+2 1309432 2020-10-20 16:24:41 -0700 2020-10-20 16:45:30 -0700
+3 1309435 2020-10-20 16:52:50 -0700 2020-10-20 16:52:50 -0700
+  title                         
+  <chr>                         
+1 Yazıcı ön izleme sorunu.      
+2 export passwords and bookmarks
+3 Getting rid of Duckduckgo     
   content                                                                       
   <chr>                                                                         
-1 "<p>Almost every site I go to these days thinks I have an outdated version of…
-2 "<p>It used to be that downloading something like a pdf and then clicking on …
-3 "<p>I have 4 tabs on my home page.  2 of them open normally, 2 do not.  If I …
-4 "<p>Gmail will not accept zoom invites (they disappear) when running on FIref…
-  tags                                               product topic     locale
-  <chr>                                              <chr>   <chr>     <chr> 
-1 desktop;websites;windows-10;firefox-810;           firefox websites  en-US 
-2 linux;desktop;beta;customize;firefox-820;          firefox customize en-US 
-3 desktop;other;windows-81;firefox-810;firefox-8102; firefox other     en-US 
-4 desktop;other;windows-10;firefox-810;              firefox other     en-US 
-  answers          creator   created_time       
-  <chr>            <chr>     <dttm>             
-1 1359606;1359672; omoya     2020-10-20 02:08:59
-2 <NA>             btickell  2020-10-20 02:47:39
-3 1359605;         lbhatten1 2020-10-20 02:52:02
-4 <NA>             eisenrj54 2020-10-20 02:58:27
+1 <p>Yazıcıdan çıktı almadan önce, ön izleme yaparak sayfayı ayarlamak istiyoru…
+2 <p>I had to send my computer in.  Before I did I downloaded file that saved A…
+3 <p>I installed the Duckduckgo extension and decided after a week that I didn'…
+  tags                                       product topic locale
+  <chr>                                      <chr>   <chr> <chr> 
+1 desktop;other;firefox-820;                 firefox other tr    
+2 desktop;beta;other;windows-10;firefox-820; firefox other en-US 
+3 mac-os;desktop;other;firefox-820;          firefox other en-US 
+  answers          creator    created_time       
+  <chr>            <chr>      <dttm>             
+1 <NA>             mrdrzoom   2020-10-20 23:00:49
+2 1359859;1359865; oregon.pax 2020-10-20 23:24:41
+3 <NA>             philmguy   2020-10-20 23:52:50
