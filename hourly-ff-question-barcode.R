@@ -19,16 +19,22 @@ script.name <- sub(file.arg.name, "", initial.options[grep(file.arg.name, initia
 script.basename <- dirname(script.name)
 
 args <- commandArgs(TRUE)
+year = as.integer(args[1])
+month = as.integer(args[2])
+day = as.integer(args[3])
+hour = as.integer(args[4])
 
 ## Default setting when no arguments passed
 if (length(args) < 4) {
   args <- c("--help")
 } else {
-  hour = as.integer(args[4])
-  if (hour < 0 || hour > 23) {
+  if (hour < 0 || hour > 23 || 
+      year < 2010 || 
+      month < 0 || month > 12) {
     args <- c("--help")
   }
 }
+                  
 if ("--help" %in% args) {
   cat(
     "
@@ -45,18 +51,12 @@ if ("--help" %in% args) {
 print(script.name)
 
 main <- function() {
-  filename <-
-    paste0(
-      args[1], "-",
-      args[2], "-",
-      args[3], "-",
-      args[1], "-",
-      args[2], "-",
-      args[3],
-      "-firefox-creator-answers-desktop-all-locales.csv"
-    )
+  filename <- sprintf(
+  "%4.4d-%2.2d-%2.2d-%4.4d-%2.2d-%2.2d-firefox-creator-answers-desktop-all-locales.csv",
+  year, month, day, year, month, day)
+
   csv <- read_csv(filename)
-  # see https://stackoverflow.com/questions/39975317/how-to-reverse-the-order-of-a-dataframe-in-r
+  # data frame needs to be in ascending order instead of descending
   reverse_csv <- csv %>% map_df(rev)
   csv_time <- reverse_csv %>%
     mutate(created_time = parse_date_time(created, orders = "ymdHMSz"))
@@ -84,16 +84,15 @@ main <- function() {
   p <- p + geom_vline(col = colours_vector,
                       xintercept = xintercept,
                       size = size)
-  png_filename <-   paste0("hour-", args[4], "-", args[1], "-", args[2], "-", 
-                           args[3], "-ff-desktop-hourly.png")
-  ggsave(png_filename, p, width = 26.666666667, height = 26.666666667, 
-         dpi = 72, limitsize = FALSE) # 26.6666667 = 1920/72dpi
+  png_filename <- sprintf(
+    "hour-%2.2d-%4.4d-%2.2d-%2.2d-firefox-creator-answers-desktop-all-locales.png",
+    hour, year, month, day, year, month, day)
+  ggsave(png_filename, p, width = 3.555555556, height = 3.555555556, 
+         dpi = 72, limitsize = FALSE) # 3.555555556 = 256/72dpi
   warnings()
 
 }
 
 sink("log.txt")
-
 main()
-
 sink()
