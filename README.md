@@ -7,7 +7,7 @@ sudo apt list --upgradeable
 sudo apt install software-properties-common
 sudo add-apt-repository ppa:deadsnakes/ppa
 sudo apt install python3.9
-sudo apt install virtualenv # orobably don't need virtualenv
+sudo apt install virtualenv # probably don't need virtualenv
 sudo apt-get install python3-pip
 sudo apt install python3-venv
 cd ~/PYTHON3.9
