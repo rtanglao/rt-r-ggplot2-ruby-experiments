@@ -10,7 +10,7 @@ sudo apt install python3.9
 sudo apt install virtualenv # probably don't need virtualenv
 sudo apt-get install python3-pip
 sudo apt install python3-venv
-cd ~/PYTHON3.9
+mkdir ~/PYTHON3.9; cd ~/PYTHON3.9
 sudo apt-get install python3.9-dev python3.9-venv
 python3.9 -m venv awesome_venv
 source awesome_venv/bin/activate
