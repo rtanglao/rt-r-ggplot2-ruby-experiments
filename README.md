@@ -1,6 +1,7 @@
 # rt-r-ggplot2-ruby-experiments
 experimental code using ruby and r with ggplot2
 ## 01November2020 installing python 3.9 on ubuntu server 18.0.4 bionic beaver
+* I need python to create sqlite from CSV files that will R scripts will generate graphics, there probably is a a ruby way to createk sqlite that I am unaware of :-)
 ```bash
 sudo apt update
 sudo apt list --upgradeable
