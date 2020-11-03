@@ -1,10 +1,9 @@
-# A time tibble: 3 x 12
-# Index: created_time
+# A tibble: 3 x 11
        id created                   updated                  
-    <dbl> <chr>                     <chr>                    
-1 1309431 2020-10-20 16:00:49 -0700 2020-10-20 16:00:49 -0700
-2 1309432 2020-10-20 16:24:41 -0700 2020-10-20 16:45:30 -0700
-3 1309435 2020-10-20 16:52:50 -0700 2020-10-20 16:52:50 -0700
+    <int> <chr>                     <chr>                    
+1 1309431 2020-10-20T16:00:49-07:00 2020-10-20T16:00:49-07:00
+2 1309432 2020-10-20T16:24:41-07:00 2020-10-20T16:45:30-07:00
+3 1309435 2020-10-20T16:52:50-07:00 2020-10-20T16:52:50-07:00
   title                         
   <chr>                         
 1 Yazıcı ön izleme sorunu.      
@@ -20,8 +19,8 @@
 1 desktop;other;firefox-820;                 firefox other tr    
 2 desktop;beta;other;windows-10;firefox-820; firefox other en-US 
 3 mac-os;desktop;other;firefox-820;          firefox other en-US 
-  answers          creator    created_time       
-  <chr>            <chr>      <dttm>             
-1 <NA>             mrdrzoom   2020-10-20 23:00:49
-2 1359859;1359865; oregon.pax 2020-10-20 23:24:41
-3 <NA>             philmguy   2020-10-20 23:52:50
+  answers          creator   
+  <chr>            <chr>     
+1 <NA>             mrdrzoom  
+2 1359859;1359865; oregon.pax
+3 <NA>             philmguy  
