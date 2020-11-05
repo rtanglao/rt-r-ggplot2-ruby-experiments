@@ -1,7 +1,20 @@
 # rt-r-ggplot2-ruby-experiments
 experimental code using ruby and r with ggplot2
 
-## 02november2019 creating a SQLite database using cvss-to-squlite
+## 05november2020 sample ggimage code
+
+from the ggimage vignette, https://cran.r-project.org/web/packages/ggimage/ggimage.pdf
+
+```R
+library("ggplot2")
+library("ggimage")
+set.seed(2017-02-21)
+d <- data.frame(x = rnorm(10),y = rnorm(10),
+image = sample(c("https://www.r-project.org/logo/Rlogo.png",
+"https://jeroenooms.github.io/images/frink.png"),size=10, replace = TRUE))
+ggplot(d, aes(x, y)) + geom_image(aes(image=image))
+```
+## 02november2020 creating a SQLite database using cvss-to-squlite
 
 ```bash
 csvs-to-sqlite 2020-10-20-2020-10-20-firefox-creator-answers-desktop-all-locales.csv \
