@@ -1,26 +1,46 @@
-# A tibble: 3 x 11
+# A tibble: 7 x 11
        id created                   updated                  
     <int> <chr>                     <chr>                    
-1 1309431 2020-10-20T16:00:49-07:00 2020-10-20T16:00:49-07:00
-2 1309432 2020-10-20T16:24:41-07:00 2020-10-20T16:45:30-07:00
-3 1309435 2020-10-20T16:52:50-07:00 2020-10-20T16:52:50-07:00
-  title                         
-  <chr>                         
-1 Yazıcı ön izleme sorunu.      
-2 export passwords and bookmarks
-3 Getting rid of Duckduckgo     
+1 1309395 2020-10-20T12:03:32-07:00 2020-10-20T14:04:42-07:00
+2 1309396 2020-10-20T12:05:05-07:00 2020-10-20T15:46:56-07:00
+3 1309400 2020-10-20T12:21:08-07:00 2020-10-20T12:21:08-07:00
+4 1309401 2020-10-20T12:26:49-07:00 2020-10-20T16:47:25-07:00
+5 1309404 2020-10-20T12:51:33-07:00 2020-10-20T13:00:48-07:00
+6 1309405 2020-10-20T12:58:13-07:00 2020-10-20T13:38:20-07:00
+7 1309407 2020-10-20T12:58:29-07:00 2020-10-20T13:59:46-07:00
+  title                                  
+  <chr>                                  
+1 how to change your account age         
+2 Browser & JavaScript                   
+3 Can not add dogpile to firefox 82.0    
+4 Website access denied error            
+5 mozilla is blocking access from company
+6 Cannot select front or rear camera     
+7 Hik Vision No plugin detected.         
   content                                                                       
   <chr>                                                                         
-1 <p>Yazıcıdan çıktı almadan önce, ön izleme yaparak sayfayı ayarlamak istiyoru…
-2 <p>I had to send my computer in.  Before I did I downloaded file that saved A…
-3 <p>I installed the Duckduckgo extension and decided after a week that I didn'…
-  tags                                       product topic locale
-  <chr>                                      <chr>   <chr> <chr> 
-1 desktop;other;firefox-820;                 firefox other tr    
-2 desktop;beta;other;windows-10;firefox-820; firefox other en-US 
-3 mac-os;desktop;other;firefox-820;          firefox other en-US 
-  answers          creator   
-  <chr>            <chr>     
-1 <NA>             mrdrzoom  
-2 1359859;1359865; oregon.pax
-3 <NA>             philmguy  
+1 <p>how to change your account age(i can`t play roblox if 14 age?) </p>        
+2 <p>A form I need to use requires that javascript be enabled. Yes, it's a US g…
+3 <p>How can I install dogpile search engine since firefox has been updated, Un…
+4 <p>I just started having this problem a few days ago prior to the latest FF u…
+5 <p>E mails are being blocked by firefox. </p><p>How can i get these mails int…
+6 <p>Hi, </p><p>When I go to Facebook on Mozilla and try to use the messenger a…
+7 <p>Can anyone help. I get the following error, I've added codec to my Linux O…
+  tags                                                        product
+  <chr>                                                       <chr>  
+1 desktop;privacy-and-security_1;windows-10;firefox-700;      firefox
+2 desktop;download-and-install_1;windows-10;firefox-810;      firefox
+3 mac-os;desktop;beta;customize;firefox-820;                  firefox
+4 desktop;beta;fix-problems;windows-10;firefox-820;           firefox
+5 desktop;beta;privacy-and-security_1;windows-10;firefox-820; firefox
+6 desktop;beta;customize;windows-10;firefox-820;              firefox
+7 linux;desktop;customize;firefox-810;firefox-8102;           firefox
+  topic                locale answers                  creator            
+  <chr>                <chr>  <chr>                    <chr>              
+1 privacy-and-security en-US  1359829;                 zhuravlevtimofey090
+2 download-and-install en-US  1359823;1359834;1359846; tgslawref          
+3 customize            en-US  <NA>                     dfmu22             
+4 fix-problems         en-US  1359867;                 mrbassman1252      
+5 privacy-and-security en-US  1359806;                 pmichalski         
+6 customize            en-US  1359821;                 amely              
+7 customize            en-US  1359808;1359820;1359828; graham35           

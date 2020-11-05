@@ -3,9 +3,9 @@ library(tidyverse)
 library(DBI)
 library(RSQLite)
 library(rvest)
-
+library(stopwords)
+library(tokenizers)
 set.seed(888)
-colours_array <- colours()
 
 getOSColour <- function(.x) { 
   case_when(
@@ -18,10 +18,12 @@ getOSColour <- function(.x) {
 getRandomQuestionText <- function(.x, .y) {
   # pick a random index between 1 and 80
   # and then get the next 79 characters of text from that index
-  index <- sample(1:80, 1)
-  tplusc = paste(.x, html_text(read_html(.y)))
-  substr = str_sub(tplusc, index, index + 79)
-  paste0("bold(\"",substr, "\")")
+  tplusc <- paste(.x, html_text(read_html(.y)))
+  tplusc_tokens <- unlist(tokenize_words(tplusc, stopwords = stopwords::stopwords("en")))
+  index <- sort(sample(1:length(tplusc_tokens), 5))
+  
+  tokenstring = paste(tplusc_tokens[1], tplusc_tokens[2], tplusc_tokens[3], tplusc_tokens[4], tplusc_tokens[5])
+  paste0("bold(\"", tokenstring, "\")")
 }
 
 initial.options <- commandArgs(trailingOnly = FALSE)
