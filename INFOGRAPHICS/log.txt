@@ -1,92 +1,26 @@
-# A tibble: 11 x 11
-        id created                   updated                  
-     <int> <chr>                     <chr>                    
- 1 1309356 2020-10-20T09:07:53-07:00 2020-10-20T09:07:53-07:00
- 2 1309357 2020-10-20T09:08:41-07:00 2020-10-20T10:26:48-07:00
- 3 1309358 2020-10-20T09:09:15-07:00 2020-10-20T09:09:15-07:00
- 4 1309362 2020-10-20T09:25:06-07:00 2020-10-20T11:39:43-07:00
- 5 1309363 2020-10-20T09:26:50-07:00 2020-10-20T09:26:50-07:00
- 6 1309364 2020-10-20T09:29:45-07:00 2020-10-20T09:29:45-07:00
- 7 1309365 2020-10-20T09:32:49-07:00 2020-10-20T16:43:26-07:00
- 8 1309366 2020-10-20T09:36:06-07:00 2020-10-20T09:36:06-07:00
- 9 1309367 2020-10-20T09:38:09-07:00 2020-10-20T15:43:37-07:00
-10 1309368 2020-10-20T09:42:33-07:00 2020-10-20T10:16:56-07:00
-11 1309374 2020-10-20T09:57:55-07:00 2020-10-20T15:50:45-07:00
-   title                                                                       
-   <chr>                                                                       
- 1 Select which GPU firefox uses for hardware acceleration in a multigpu system
- 2 Website will not work with Firefox but DOES work with Chrome                
- 3 Thunderbird                                                                 
- 4 Changing search engine in NEW TAB page                                      
- 5 No sound with firefox                                                       
- 6 loading Top Site                                                            
- 7 Cannot open a website used before                                           
- 8 firefox                                                                     
- 9 New Tab Pocket Settings Missing                                             
-10 gogle and yahoo analytics                                                   
-11 Clear browsing history manually                                             
-   content                                                                      
-   <chr>                                                                        
- 1 "<p>Software: Manjaro Linux, GNOME, Xorg, Firefox 81 Hardware: nvidia GTX 10…
- 2 "<p>Website will not work with Firefox but DOES work with Chrome. Website lo…
- 3 "<p>Hi All </p><p>I know this is the firefox forum but when I post in the th…
- 4 "<p>How does one lose Google on the New Tab page? I'd like to see \"any sear…
- 5 "<p>Je n'ai aucun son avec ma version de firefox 81.0.2, la vidéo fonctionne…
- 6 "<p>One of Opera's best features (for me) is Speed Dial , which is roughly s…
- 7 "<p>I cannot open <a href=\"http://unitedairlines.com\" rel=\"nofollow\">uni…
- 8 "<p>sobre firefox </p>"                                                      
- 9 "<p>I had accidentally refreshed my Firefox, and after adding back all my ol…
-10 "<p>I am getting a note from BitDefender that is is blocking my default brow…
-11 "<p>Why can't i delete my browsing history manually anymore? The only thing …
-   tags                                                   product
-   <chr>                                                  <chr>  
- 1 linux;desktop;customize;firefox-810;                   firefox
- 2 desktop;websites;firefox-810;                          firefox
- 3 desktop;fix-problems;windows-10;firefox-810;           firefox
- 4 desktop;customize;windows-10;firefox-810;              firefox
- 5 desktop;other;windows-10;firefox-810;                  firefox
- 6 windows-7;desktop;download-and-install_1;firefox-810;  firefox
- 7 desktop;other;windows-8;needsinfo;firefox-810;         firefox
- 8 windows-xp;desktop;download-and-install_1;firefox-520; firefox
- 9 desktop;beta;fix-problems;windows-10;firefox-820;      firefox
-10 windows-7;desktop;privacy-and-security_1;firefox-810;  firefox
-11 desktop;websites;windows-10;firefox-810;               firefox
-   topic                locale
-   <chr>                <chr> 
- 1 customize            en-US 
- 2 websites             en-US 
- 3 fix-problems         en-US 
- 4 customize            en-US 
- 5 other                en-US 
- 6 download-and-install en-US 
- 7 other                en-US 
- 8 download-and-install pt-BR 
- 9 fix-problems         en-US 
-10 privacy-and-security en-US 
-11 websites             en-US 
-   answers                                                         
-   <chr>                                                           
- 1 <NA>                                                            
- 2 1359696;1359713;1359721;1359730;                                
- 3 <NA>                                                            
- 4 1359715;1359759;                                                
- 5 <NA>                                                            
- 6 <NA>                                                            
- 7 1359833;1359862;                                                
- 8 <NA>                                                            
- 9 1359725;1359734;1359751;1359756;1359758;1359801;1359805;1359844;
-10 1359723;                                                        
-11 1359722;1359779;1359848;                                        
-   creator            
-   <chr>              
- 1 parahaps           
- 2 fp5849             
- 3 scottish2          
- 4 MaxTrax            
- 5 galium.aparine     
- 6 Manfreddy          
- 7 44Larry            
- 8 daysecamargorocio39
- 9 meepsterIQ         
-10 Manfreddy          
-11 VHartmann          
+# A tibble: 3 x 11
+       id created                   updated                  
+    <int> <chr>                     <chr>                    
+1 1309431 2020-10-20T16:00:49-07:00 2020-10-20T16:00:49-07:00
+2 1309432 2020-10-20T16:24:41-07:00 2020-10-20T16:45:30-07:00
+3 1309435 2020-10-20T16:52:50-07:00 2020-10-20T16:52:50-07:00
+  title                         
+  <chr>                         
+1 Yazıcı ön izleme sorunu.      
+2 export passwords and bookmarks
+3 Getting rid of Duckduckgo     
+  content                                                                       
+  <chr>                                                                         
+1 <p>Yazıcıdan çıktı almadan önce, ön izleme yaparak sayfayı ayarlamak istiyoru…
+2 <p>I had to send my computer in.  Before I did I downloaded file that saved A…
+3 <p>I installed the Duckduckgo extension and decided after a week that I didn'…
+  tags                                       product topic locale
+  <chr>                                      <chr>   <chr> <chr> 
+1 desktop;other;firefox-820;                 firefox other tr    
+2 desktop;beta;other;windows-10;firefox-820; firefox other en-US 
+3 mac-os;desktop;other;firefox-820;          firefox other en-US 
+  answers          creator   
+  <chr>            <chr>     
+1 <NA>             mrdrzoom  
+2 1359859;1359865; oregon.pax
+3 <NA>             philmguy  

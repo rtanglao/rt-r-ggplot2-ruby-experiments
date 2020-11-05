@@ -25,7 +25,10 @@ getRandomQuestionText <- function(.x, .y) {
 
   index <- sort(sample(1:length(tplusc_tokens), num_tokens))
   
-  tokenstring = paste(tplusc_tokens[1], tplusc_tokens[2], tplusc_tokens[3], tplusc_tokens[4], tplusc_tokens[5])
+  tokenstring = paste(
+    tplusc_tokens[index[1]], tplusc_tokens[index[2]], 
+    tplusc_tokens[index[3]], tplusc_tokens[index[4]], 
+    tplusc_tokens[index[5]])
   paste0("bold(\"", tokenstring, "\")")
 }
 
