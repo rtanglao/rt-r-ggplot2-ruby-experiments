@@ -3,7 +3,7 @@ experimental code using ruby and r with ggplot2
 
 ## 05november2020 sample ggimage code
 
-from the ggimage vignette, https://cran.r-project.org/web/packages/ggimage/ggimage.pdf
+from the ggimage vignette, https://cran.r-project.org/web/packages/ggimage/ggimage.pdf found via this question on stack overflow: https://stackoverflow.com/questions/2181902/how-to-use-an-image-as-a-point-in-ggplot
 
 ```R
 library("ggplot2")
