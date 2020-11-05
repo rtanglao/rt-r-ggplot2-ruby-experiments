@@ -20,7 +20,10 @@ getRandomQuestionText <- function(.x, .y) {
   # and then get the next 79 characters of text from that index
   tplusc <- paste(.x, html_text(read_html(.y)))
   tplusc_tokens <- unlist(tokenize_words(tplusc, stopwords = stopwords::stopwords("en")))
-  index <- sort(sample(1:length(tplusc_tokens), 5))
+  token_length <- length(tplusc_tokens)
+  num_tokens <- if(token_length >= 5) 5 else token_length
+
+  index <- sort(sample(1:length(tplusc_tokens), num_tokens))
   
   tokenstring = paste(tplusc_tokens[1], tplusc_tokens[2], tplusc_tokens[3], tplusc_tokens[4], tplusc_tokens[5])
   paste0("bold(\"", tokenstring, "\")")
