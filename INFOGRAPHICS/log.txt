@@ -1,26 +1,26 @@
 # A tibble: 3 x 11
        id created                   updated                  
     <int> <chr>                     <chr>                    
-1 1309431 2020-10-20T16:00:49-07:00 2020-10-20T16:00:49-07:00
-2 1309432 2020-10-20T16:24:41-07:00 2020-10-20T16:45:30-07:00
-3 1309435 2020-10-20T16:52:50-07:00 2020-10-20T16:52:50-07:00
-  title                         
-  <chr>                         
-1 Yazıcı ön izleme sorunu.      
-2 export passwords and bookmarks
-3 Getting rid of Duckduckgo     
+1 1309263 2020-10-19T17:21:10-07:00 2020-10-19T20:07:56-07:00
+2 1309264 2020-10-19T17:23:26-07:00 2020-10-20T12:47:12-07:00
+3 1309265 2020-10-19T17:30:43-07:00 2020-10-19T17:30:43-07:00
+  title                                
+  <chr>                                
+1 Video Playback Crashes               
+2 Firefox will not open                
+3 DuckDuckGo Search using POST requests
   content                                                                       
   <chr>                                                                         
-1 <p>Yazıcıdan çıktı almadan önce, ön izleme yaparak sayfayı ayarlamak istiyoru…
-2 <p>I had to send my computer in.  Before I did I downloaded file that saved A…
-3 <p>I installed the Duckduckgo extension and decided after a week that I didn'…
-  tags                                       product topic locale
-  <chr>                                      <chr>   <chr> <chr> 
-1 desktop;other;firefox-820;                 firefox other tr    
-2 desktop;beta;other;windows-10;firefox-820; firefox other en-US 
-3 mac-os;desktop;other;firefox-820;          firefox other en-US 
-  answers          creator   
-  <chr>            <chr>     
-1 <NA>             mrdrzoom  
-2 1359859;1359865; oregon.pax
-3 <NA>             philmguy  
+1 "<p>Hey, this just recently started happening but whenever I try to playback …
+2 "<p>Having a problem getting Firefox to open.  When you try to click on it it…
+3 "<p>When Firefox is closed, the <a href=\"https://html.duckduckgo.com/html/\"…
+  tags                                                      product topic       
+  <chr>                                                     <chr>   <chr>       
+1 desktop;fix-problems;windows-10;firefox-810;firefox-8102; firefox fix-problems
+2 desktop;fix-problems;                                     firefox fix-problems
+3 windows-7;desktop;fix-problems;firefox-780;               firefox fix-problems
+  locale answers                                          creator     
+  <chr>  <chr>                                            <chr>       
+1 en-US  1359609;1359610;                                 pinoyboy1081
+2 en-US  1359607;1359608;1359623;1359636;1359650;1359780; bozelley    
+3 en-US  <NA>                                             Famito      
