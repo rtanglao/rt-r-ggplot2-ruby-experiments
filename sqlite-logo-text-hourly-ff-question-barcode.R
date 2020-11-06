@@ -29,24 +29,24 @@ getLogo <- function(.x) {
 }
 
 getRandomQuestionText <- function(.x, .y) {
-  # pick a random index between 1 and 80
-  # and then get the next 79 characters of text from that index
+  # pick 5 random tokens
   tplusc <- paste(.x, html_text(read_html(.y)))
+  print(tplusc)
   tplusc_tokens <-
     unlist(tokenize_words(tplusc, stopwords = stopwords::stopwords("en")))
+  print(tplusc_tokens)
   token_length <- length(tplusc_tokens)
-  num_tokens <- if (token_length >= 5)
-    5
-  else
-    token_length
+  num_tokens <- if (token_length >= 5) 5 else token_length
   
   index <- sort(sample(1:length(tplusc_tokens), num_tokens))
+  print(index)
   
   tokenstring = paste(tplusc_tokens[index[1]],
                       tplusc_tokens[index[2]],
                       tplusc_tokens[index[3]],
                       tplusc_tokens[index[4]],
                       tplusc_tokens[index[5]])
+  print(tokenstring)
   paste0("bold(\"", tokenstring, "\")")
 }
 
@@ -121,32 +121,36 @@ main <- function() {
                         from = 0)
   
   options(tibble.width = Inf)
-  print(reverse_df)
   
   os_colours_vector <- map_chr(reverse_df$tags, getOSColour)
   question_text <- map2_chr(reverse_df$title,
                             reverse_df$content,
                             getRandomQuestionText)
+  print(question_text)
+  print(image_df)
   
-  p <- ggplot(image_df, aes(x, y)) + geom_image(aes(image = icon)) + theme_void()
+  p <- ggplot(image_df, aes(x, y)) + geom_image(aes(image = icon)) + 
+    theme_void() + xlim(0, 60) + ylim(0, 60)
+
   p <- p + annotate(
     "text",
     label = question_text,
-    x = 25,
-    y = image_df$y + 0.5,
+    x = 20,
+    y = image_df$y + 1.75,
     color = os_colours_vector,
-    parse = TRUE
+    parse = TRUE,
+    hjust = 0
   )
   png_filename <- sprintf("logo-text-hour-%2.2d-%s.png",
                           hour, base_name)
   ggsave(
     png_filename,
     p,
-    width = 3.555555556,
-    height = 3.555555556,
+    width = 14.2222222222,
+    height = 14.2222222222,
     dpi = 72,
     limitsize = FALSE
-  ) # 3.555555556 = 256/72dpi
+  ) # 14.2222222222 = 1024/72dpi
   warnings()
 }
 

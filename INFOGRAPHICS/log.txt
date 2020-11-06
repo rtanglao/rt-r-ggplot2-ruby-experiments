@@ -1,26 +1,76 @@
-# A tibble: 3 x 11
+[1] "Yazıcı ön izleme sorunu. Yazıcıdan çıktı almadan önce, ön izleme yaparak sayfayı ayarlamak istiyorum ama Firefox'da öyle bir seçenek otomatik olarak devreye girmiyor. Elle yapılması gerekiyor ve çıktı almam gereken yer ise bu işlemi yapmama olanak tanımıyor. Bu sorunu sadece Firefox'da yaşıyorum; Opera ve Chrome'da böyle bir sorun yok. "
+ [1] "yazıcı"     "ön"         "izleme"     "sorunu"     "yazıcıdan" 
+ [6] "çıktı"      "almadan"    "önce"       "ön"         "izleme"    
+[11] "yaparak"    "sayfayı"    "ayarlamak"  "istiyorum"  "ama"       
+[16] "firefox'da" "öyle"       "bir"        "seçenek"    "otomatik"  
+[21] "olarak"     "devreye"    "girmiyor"   "elle"       "yapılması" 
+[26] "gerekiyor"  "ve"         "çıktı"      "almam"      "gereken"   
+[31] "yer"        "ise"        "bu"         "işlemi"     "yapmama"   
+[36] "olanak"     "tanımıyor"  "bu"         "sorunu"     "sadece"    
+[41] "firefox'da" "yaşıyorum"  "opera"      "ve"         "chrome'da" 
+[46] "böyle"      "bir"        "sorun"      "yok"       
+[1]  1  8 11 43 47
+[1] "yazıcı önce yaparak opera bir"
+[1] "export passwords and bookmarks I had to send my computer in.  Before I did I downloaded file that saved ALL my Firefox passwords and bookmarks, and I opened both files to make sure they downloaded before wiping out my computer.  I also opened a Firefox account to save the information but it demanded a cell phone which I don't have.  Today as I'm reinstalling everything I see the two files I saved from Firefox are gone.  Also my account does not have anything saved.  I regret relying on password fill as now I will be locked out of ALL my accounts.  Can anything be done? "
+ [1] "export"       "passwords"    "bookmarks"    "send"         "computer"    
+ [6] "downloaded"   "file"         "saved"        "firefox"      "passwords"   
+[11] "bookmarks"    "opened"       "files"        "make"         "sure"        
+[16] "downloaded"   "wiping"       "computer"     "also"         "opened"      
+[21] "firefox"      "account"      "save"         "information"  "demanded"    
+[26] "cell"         "phone"        "today"        "reinstalling" "everything"  
+[31] "see"          "two"          "files"        "saved"        "firefox"     
+[36] "gone"         "also"         "account"      "anything"     "saved"       
+[41] "regret"       "relying"      "password"     "fill"         "now"         
+[46] "locked"       "accounts"     "can"          "anything"     "done"        
+[1]  1  3 34 39 42
+[1] "export bookmarks saved anything relying"
+[1] "Getting rid of Duckduckgo I installed the Duckduckgo extension and decided after a week that I didn't want to use it any longer. I disabled the extension and in Preferences/Search selected Google to once again be my default search engine. But, when I do a search, Duckduckgo comes up as the default, and when I look in Preferences/Search it again shows as the default. I went back into extensions and totally removed Duckduckgo, reset Google again as the default but it reverts to Duckduckgo. I went into One-Click Search Engines and removed Duckduckgo, but then when I try to select my default search engine there are no search engines from which to choose. I clicked on Restore Default Search Engines but then I'm back to Duckduckgo being the default search engine. I've spent hours searching online with no success. How do I get rid of it and get Google back as my default? I'm using Firefox 82.0 on an iMac running Catalina. I updated to 82.0 hoping that might solve the issue, but no luck. "
+ [1] "getting"     "rid"         "duckduckgo"  "installed"   "duckduckgo" 
+ [6] "extension"   "decided"     "week"        "want"        "use"        
+[11] "longer"      "disabled"    "extension"   "preferences" "search"     
+[16] "selected"    "google"      "default"     "search"      "engine"     
+[21] "search"      "duckduckgo"  "comes"       "default"     "look"       
+[26] "preferences" "search"      "shows"       "default"     "went"       
+[31] "back"        "extensions"  "totally"     "removed"     "duckduckgo" 
+[36] "reset"       "google"      "default"     "reverts"     "duckduckgo" 
+[41] "went"        "one"         "click"       "search"      "engines"    
+[46] "removed"     "duckduckgo"  "try"         "select"      "default"    
+[51] "search"      "engine"      "search"      "engines"     "choose"     
+[56] "clicked"     "restore"     "default"     "search"      "engines"    
+[61] "back"        "duckduckgo"  "default"     "search"      "engine"     
+[66] "spent"       "hours"       "searching"   "online"      "success"    
+[71] "get"         "rid"         "get"         "google"      "back"       
+[76] "default"     "using"       "firefox"     "82.0"        "imac"       
+[81] "running"     "catalina"    "updated"     "82.0"        "hoping"     
+[86] "might"       "solve"       "issue"       "luck"       
+[1]  7 19 39 43 54
+[1] "decided search reverts click engines"
+[1] "bold(\"yazıcı önce yaparak opera bir\")"          
+[2] "bold(\"export bookmarks saved anything relying\")"
+[3] "bold(\"decided search reverts click engines\")"   
+# A tibble: 3 x 14
        id created                   updated                  
     <int> <chr>                     <chr>                    
-1 1309263 2020-10-19T17:21:10-07:00 2020-10-19T20:07:56-07:00
-2 1309264 2020-10-19T17:23:26-07:00 2020-10-20T12:47:12-07:00
-3 1309265 2020-10-19T17:30:43-07:00 2020-10-19T17:30:43-07:00
-  title                                
-  <chr>                                
-1 Video Playback Crashes               
-2 Firefox will not open                
-3 DuckDuckGo Search using POST requests
+1 1309431 2020-10-20T16:00:49-07:00 2020-10-20T16:00:49-07:00
+2 1309432 2020-10-20T16:24:41-07:00 2020-10-20T16:45:30-07:00
+3 1309435 2020-10-20T16:52:50-07:00 2020-10-20T16:52:50-07:00
+  title                         
+  <chr>                         
+1 Yazıcı ön izleme sorunu.      
+2 export passwords and bookmarks
+3 Getting rid of Duckduckgo     
   content                                                                       
   <chr>                                                                         
-1 "<p>Hey, this just recently started happening but whenever I try to playback …
-2 "<p>Having a problem getting Firefox to open.  When you try to click on it it…
-3 "<p>When Firefox is closed, the <a href=\"https://html.duckduckgo.com/html/\"…
-  tags                                                      product topic       
-  <chr>                                                     <chr>   <chr>       
-1 desktop;fix-problems;windows-10;firefox-810;firefox-8102; firefox fix-problems
-2 desktop;fix-problems;                                     firefox fix-problems
-3 windows-7;desktop;fix-problems;firefox-780;               firefox fix-problems
-  locale answers                                          creator     
-  <chr>  <chr>                                            <chr>       
-1 en-US  1359609;1359610;                                 pinoyboy1081
-2 en-US  1359607;1359608;1359623;1359636;1359650;1359780; bozelley    
-3 en-US  <NA>                                             Famito      
+1 <p>Yazıcıdan çıktı almadan önce, ön izleme yaparak sayfayı ayarlamak istiyoru…
+2 <p>I had to send my computer in.  Before I did I downloaded file that saved A…
+3 <p>I installed the Duckduckgo extension and decided after a week that I didn'…
+  tags                                       product topic locale
+  <chr>                                      <chr>   <chr> <chr> 
+1 desktop;other;firefox-820;                 firefox other tr    
+2 desktop;beta;other;windows-10;firefox-820; firefox other en-US 
+3 mac-os;desktop;other;firefox-820;          firefox other en-US 
+  answers          creator        x icon                       y
+  <chr>            <chr>      <int> <chr>                  <int>
+1 <NA>             mrdrzoom       0 LOGOS/purple-logo.png      0
+2 1359859;1359865; oregon.pax    24 LOGOS/windows-logo.png     5
+3 <NA>             philmguy      52 LOGOS/macos-logo.png      10
