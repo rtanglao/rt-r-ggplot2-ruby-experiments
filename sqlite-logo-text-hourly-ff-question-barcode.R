@@ -130,7 +130,8 @@ main <- function() {
   print(image_df)
   
   p <- ggplot(image_df, aes(x, y)) + geom_image(aes(image = icon)) + 
-    theme_void() + xlim(0, 60) + ylim(0, 60)
+    theme_void() + expand_limits(y = c(0, 60), x =c(0,60))
+    # xlim(0, 60) + ylim(0, 60)
 
   p <- p + annotate(
     "text",
