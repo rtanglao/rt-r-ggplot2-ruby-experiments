@@ -122,26 +122,17 @@ main <- function() {
   
   options(tibble.width = Inf)
   
-  os_colours_vector <- map_chr(reverse_df$tags, getOSColour)
-  question_text <- map2_chr(reverse_df$title,
+  image_df$colours <- map_chr(reverse_df$tags, getOSColour)
+  image_df$question  <- map2_chr(reverse_df$title,
                             reverse_df$content,
                             getRandomQuestionText)
-  print(question_text)
   print(image_df)
   
-  p <- ggplot(image_df, aes(x, y)) + geom_image(aes(image = icon)) + 
-    theme_void() + expand_limits(y = c(0, 60), x =c(0,60))
-    # xlim(0, 60) + ylim(0, 60)
+  p <- ggplot(image_df, aes(x, y, label=question)) + 
+    geom_text(vjust="inward", hjust="inward") + 
+    geom_image(aes(image = icon)) + 
+    theme_void() + expand_limits(y = c(0, 60), x = c(0,60))
 
-  p <- p + annotate(
-    "text",
-    label = question_text,
-    x = 20,
-    y = image_df$y + 1.75,
-    color = os_colours_vector,
-    parse = TRUE,
-    hjust = 0
-  )
   png_filename <- sprintf("logo-text-hour-%2.2d-%s.png",
                           hour, base_name)
   ggsave(
