@@ -114,18 +114,15 @@ main <- function() {
   length = nrow(reverse_df)
   image_df <- reverse_df %>%
     mutate(x = minute(parse_date_time(created, "YmdhMSz"))) %>%
-    mutate(icon = getLogo(tags))
-  
-  image_df$y <- seq.int(by = 5,
+    mutate(icon = getLogo(tags)) %>% 
+    mutate(y = seq.int(by = 5,
                         length = length,
-                        from = 0)
-  
+                        from = 0)) %>% 
+    mutate(colours  = map_chr(reverse_df$tags, getOSColour)) %>% 
+    mutate(question =  map2_chr(reverse_df$title,
+                                 reverse_df$content,
+                                 getRandomQuestionText))       
   options(tibble.width = Inf)
-  
-  image_df$colours <- map_chr(reverse_df$tags, getOSColour)
-  image_df$question  <- map2_chr(reverse_df$title,
-                            reverse_df$content,
-                            getRandomQuestionText)
   print(image_df)
   
   p <- ggplot(image_df, aes(x, y, label=question)) + 
