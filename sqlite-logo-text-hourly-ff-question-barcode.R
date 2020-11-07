@@ -12,9 +12,9 @@ set.seed(888)
 
 getOSColour <- function(.x) {
   case_when(
-    str_detect(.x, "mac-os|os-x|osx|macos") ~ "blue",
-    str_detect(.x, "linux|ubuntu|redhat|debian") ~ "green",
-    str_detect(.x, "windows-7|windows-8|windows-10") ~ "hotpink",
+    str_detect(.x, "mac-os|os-x|osx|macos") ~ "black",
+    str_detect(.x, "linux|ubuntu|redhat|debian") ~ "gold",
+    str_detect(.x, "windows-7|windows-8|windows-10") ~ "blue",
     TRUE ~ "purple"
   )
 }
@@ -118,16 +118,18 @@ main <- function() {
     mutate(y = seq.int(by = 5,
                         length = length,
                         from = 0)) %>% 
-    mutate(colours  = map_chr(reverse_df$tags, getOSColour)) %>% 
+    mutate(os_colours  = map_chr(reverse_df$tags, getOSColour)) %>% 
     mutate(question =  map2_chr(reverse_df$title,
                                  reverse_df$content,
                                  getRandomQuestionText))       
   options(tibble.width = Inf)
   print(image_df)
   
-  p <- ggplot(image_df, aes(x, y, label=question)) + 
-    geom_text(vjust="inward", hjust="inward") + 
+  p <- ggplot(image_df, aes(x, y)) +
     geom_image(aes(image = icon)) + 
+    geom_text(aes(label = question), colour = image_df$os_colours, 
+              vjust = "inward", hjust = "inward", parse = TRUE, 
+              nudge_y = 2.2, nudge_x = -8, size = 8) + 
     theme_void() + expand_limits(y = c(0, 60), x = c(0,60))
 
   png_filename <- sprintf("logo-text-hour-%2.2d-%s.png",

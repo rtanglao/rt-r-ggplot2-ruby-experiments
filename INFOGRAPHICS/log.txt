@@ -66,11 +66,11 @@
 1 desktop;other;firefox-820;                 firefox other tr    
 2 desktop;beta;other;windows-10;firefox-820; firefox other en-US 
 3 mac-os;desktop;other;firefox-820;          firefox other en-US 
-  answers          creator        x icon                       y colours
-  <chr>            <chr>      <int> <chr>                  <int> <chr>  
-1 <NA>             mrdrzoom       0 LOGOS/purple-logo.png      0 purple 
-2 1359859;1359865; oregon.pax    24 LOGOS/windows-logo.png     5 hotpink
-3 <NA>             philmguy      52 LOGOS/macos-logo.png      10 blue   
+  answers          creator        x icon                       y os_colours
+  <chr>            <chr>      <int> <chr>                  <int> <chr>     
+1 <NA>             mrdrzoom       0 LOGOS/purple-logo.png      0 purple    
+2 1359859;1359865; oregon.pax    24 LOGOS/windows-logo.png     5 blue      
+3 <NA>             philmguy      52 LOGOS/macos-logo.png      10 black     
   question                                           
   <chr>                                              
 1 "bold(\"yazıcı önce yaparak opera bir\")"          
