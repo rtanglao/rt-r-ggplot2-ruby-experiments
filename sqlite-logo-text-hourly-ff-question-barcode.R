@@ -132,14 +132,15 @@ main <- function() {
 
   png_filename <- sprintf("logo-text-hour-%2.2d-%s.png",
                           hour, base_name)
+
   ggsave(
     png_filename,
     p,
-    width = 14.2222222222,
-    height = 14.2222222222,
+    width = 14.2222222222223,
+    height = 14.2222222222223,
     dpi = 72,
     limitsize = FALSE
-  ) # 14.2222222222 = 1024/72dpi
+  ) # 14.2222222222223 = 1024/72dpi
   warnings()
 }
 
