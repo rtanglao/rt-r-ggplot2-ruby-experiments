@@ -126,10 +126,8 @@ main <- function() {
               vjust = "inward", hjust = "inward", parse = TRUE,
               nudge_y = 2.2, nudge_x = -8, size = 8) +
     theme_void() + expand_limits(y = c(0, 60), x = c(0, 60))
-
   png_filename <- sprintf("logo-text-hour-%2.2d-%s.png",
                           hour, base_name)
-
   ggsave(
     png_filename,
     p,
