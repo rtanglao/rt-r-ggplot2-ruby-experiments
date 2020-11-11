@@ -48,11 +48,11 @@ get_random_question_text <- function(.x, .y) {
   paste0("bold(\"", tokenstring, "\")")
 }
 
-initial.options <- commandArgs(trailingOnly = FALSE)
-file.arg.name <- "--file="
-script.name <-
-  sub(file.arg.name, "", initial.options[grep(file.arg.name, initial.options)])
-script.basename <- dirname(script.name)
+initial_options <- commandArgs(trailingOnly = FALSE)
+file_arg_name <- "--file="
+script_name <-
+  sub(file_arg_name, "", initial_options[grep(file_arg_name, initial_options)])
+script_base <- dirname(script_name)
 args <- commandArgs(TRUE)
 year <- as.integer(args[1])
 month <- as.integer(args[2])
@@ -79,10 +79,10 @@ if ("--help" %in% args) {
     hour (0-23)
     --help              - print this text
     Example:")
-  cat(paste("Rscript", script.name, "2020 10 20 23\n\n"))
+  cat(paste("Rscript", script_name, "2020 10 20 23\n\n"))
   q(save = "no")
 }
-print(script.name)
+print(script_name)
 
 main <- function() {
   base_name <-
