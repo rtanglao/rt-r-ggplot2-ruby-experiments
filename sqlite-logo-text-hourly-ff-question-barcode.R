@@ -10,7 +10,7 @@ library(lubridate)
 
 set.seed(888)
 
-getOSColour <- function(.x) {
+get_os_colour <- function(.x) {
   case_when(
     str_detect(.x, "mac-os|os-x|osx|macos") ~ "black",
     str_detect(.x, "linux|ubuntu|redhat|debian") ~ "gold",
@@ -19,7 +19,7 @@ getOSColour <- function(.x) {
   )
 }
 
-getLogo <- function(.x) {
+get_logo <- function(.x) {
   case_when(
     str_detect(.x, "mac-os|os-x|osx|macos") ~ "LOGOS/macos-logo.png",
     str_detect(.x, "linux|ubuntu|redhat|debian") ~ "LOGOS/linux-logo.png",
@@ -28,7 +28,7 @@ getLogo <- function(.x) {
   )
 }
 
-getRandomQuestionText <- function(.x, .y) {
+get_random_question_text <- function(.x, .y) {
   # pick 5 random tokens
   tplusc <- paste(.x, html_text(read_html(.y)))
   print(tplusc)
@@ -37,11 +37,9 @@ getRandomQuestionText <- function(.x, .y) {
   print(tplusc_tokens)
   token_length <- length(tplusc_tokens)
   num_tokens <- if (token_length >= 5) 5 else token_length
-  
-  index <- sort(sample(1:length(tplusc_tokens), num_tokens))
+  index <- sort(sample(seq_len(length(tplusc_tokens)), num_tokens))
   print(index)
-  
-  tokenstring = paste(tplusc_tokens[index[1]],
+  tokenstring <- paste(tplusc_tokens[index[1]],
                       tplusc_tokens[index[2]],
                       tplusc_tokens[index[3]],
                       tplusc_tokens[index[4]],
@@ -55,12 +53,11 @@ file.arg.name <- "--file="
 script.name <-
   sub(file.arg.name, "", initial.options[grep(file.arg.name, initial.options)])
 script.basename <- dirname(script.name)
-
 args <- commandArgs(TRUE)
-year = as.integer(args[1])
-month = as.integer(args[2])
-day = as.integer(args[3])
-hour = as.integer(args[4])
+year <- as.integer(args[1])
+month <- as.integer(args[2])
+day <- as.integer(args[3])
+hour <- as.integer(args[4])
 
 ## Default setting when no arguments passed
 if (length(args) < 4) {
@@ -90,7 +87,7 @@ print(script.name)
 main <- function() {
   base_name <-
     sprintf(
-      "%4.4d-%2.2d-%2.2d-%4.4d-%2.2d-%2.2d-firefox-creator-answers-desktop-all-locales",
+"%4.4d-%2.2d-%2.2d-%4.4d-%2.2d-%2.2d-firefox-creator-answers-desktop-all-locales",
       year,
       month,
       day,
@@ -100,7 +97,6 @@ main <- function() {
     )
   db_filename <- sprintf("%s.db", base_name)
   date_str <- sprintf("%4.4d-%2.2d-%2.2d %2.2d", year, month, day, hour)
-  
   ffquestionsdb <- dbConnect(RSQLite::SQLite(), db_filename)
   query_str <- sprintf(
     "select * from \"%s\" where (datetime(created) >= datetime(\"%s:00:00\") AND
@@ -110,27 +106,26 @@ main <- function() {
     date_str
   )
   sqlitedf <- dbGetQuery(ffquestionsdb, query_str)
-  reverse_df <- sqlitedf %>% map_df(rev)
-  length = nrow(reverse_df)
+  reverse_df <- sqlitedf %>%
+    map_df(rev)
+  length <- nrow(reverse_df)
   image_df <- reverse_df %>%
     mutate(x = minute(parse_date_time(created, "YmdhMSz"))) %>%
-    mutate(icon = getLogo(tags)) %>% 
-    mutate(y = seq.int(by = 5,
-                        length = length,
-                        from = 0)) %>% 
-    mutate(os_colours  = map_chr(reverse_df$tags, getOSColour)) %>% 
+    mutate(icon = get_logo(tags)) %>%
+    mutate(y = seq.int(
+      by = 5, length = length, from = 0)) %>%
+    mutate(os_colours  = map_chr(reverse_df$tags, get_os_colour)) %>%
     mutate(question =  map2_chr(reverse_df$title,
                                  reverse_df$content,
-                                 getRandomQuestionText))       
+                                 get_random_question_text))
   options(tibble.width = Inf)
   print(image_df)
-  
   p <- ggplot(image_df, aes(x, y)) +
-    geom_image(aes(image = icon)) + 
-    geom_text(aes(label = question), colour = image_df$os_colours, 
-              vjust = "inward", hjust = "inward", parse = TRUE, 
-              nudge_y = 2.2, nudge_x = -8, size = 8) + 
-    theme_void() + expand_limits(y = c(0, 60), x = c(0,60))
+    geom_image(aes(image = icon)) +
+    geom_text(aes(label = question), colour = image_df$os_colours,
+              vjust = "inward", hjust = "inward", parse = TRUE,
+              nudge_y = 2.2, nudge_x = -8, size = 8) +
+    theme_void() + expand_limits(y = c(0, 60), x = c(0, 60))
 
   png_filename <- sprintf("logo-text-hour-%2.2d-%s.png",
                           hour, base_name)
@@ -145,7 +140,6 @@ main <- function() {
   ) # 14.2222222222223 = 1024/72dpi
   warnings()
 }
-
 sink("log.txt")
 main()
 sink()
