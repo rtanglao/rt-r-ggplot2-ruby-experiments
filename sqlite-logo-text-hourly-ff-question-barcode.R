@@ -7,6 +7,7 @@ library(stopwords)
 library(tokenizers)
 library(ggimage)
 library(lubridate)
+library(ggrepel)
 
 set.seed(888)
 
@@ -122,9 +123,9 @@ main <- function() {
   print(image_df)
   p <- ggplot(image_df, aes(x, y)) +
     geom_image(aes(image = icon)) +
-    geom_text(aes(label = question, colour = os_colours),
+    geom_label_repel(aes(label = question, colour = os_colours),
               vjust = "inward", hjust = "inward", parse = TRUE,
-              nudge_y = 2.2, nudge_x = -8, size = 8) +
+              nudge_y = 2.2, nudge_x = -8, size = 2) +
     scale_colour_identity() +
     theme_void() + expand_limits(y = c(0, 60), x = c(0, 60))
   png_filename <- sprintf("logo-text-hour-%2.2d-%s.png",
