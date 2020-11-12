@@ -1,78 +1,233 @@
-[1] "Yazıcı ön izleme sorunu. Yazıcıdan çıktı almadan önce, ön izleme yaparak sayfayı ayarlamak istiyorum ama Firefox'da öyle bir seçenek otomatik olarak devreye girmiyor. Elle yapılması gerekiyor ve çıktı almam gereken yer ise bu işlemi yapmama olanak tanımıyor. Bu sorunu sadece Firefox'da yaşıyorum; Opera ve Chrome'da böyle bir sorun yok. "
- [1] "yazıcı"     "ön"         "izleme"     "sorunu"     "yazıcıdan" 
- [6] "çıktı"      "almadan"    "önce"       "ön"         "izleme"    
-[11] "yaparak"    "sayfayı"    "ayarlamak"  "istiyorum"  "ama"       
-[16] "firefox'da" "öyle"       "bir"        "seçenek"    "otomatik"  
-[21] "olarak"     "devreye"    "girmiyor"   "elle"       "yapılması" 
-[26] "gerekiyor"  "ve"         "çıktı"      "almam"      "gereken"   
-[31] "yer"        "ise"        "bu"         "işlemi"     "yapmama"   
-[36] "olanak"     "tanımıyor"  "bu"         "sorunu"     "sadece"    
-[41] "firefox'da" "yaşıyorum"  "opera"      "ve"         "chrome'da" 
-[46] "böyle"      "bir"        "sorun"      "yok"       
-[1]  1  8 11 43 47
-[1] "yazıcı önce yaparak opera bir"
-[1] "export passwords and bookmarks I had to send my computer in.  Before I did I downloaded file that saved ALL my Firefox passwords and bookmarks, and I opened both files to make sure they downloaded before wiping out my computer.  I also opened a Firefox account to save the information but it demanded a cell phone which I don't have.  Today as I'm reinstalling everything I see the two files I saved from Firefox are gone.  Also my account does not have anything saved.  I regret relying on password fill as now I will be locked out of ALL my accounts.  Can anything be done? "
- [1] "export"       "passwords"    "bookmarks"    "send"         "computer"    
- [6] "downloaded"   "file"         "saved"        "firefox"      "passwords"   
-[11] "bookmarks"    "opened"       "files"        "make"         "sure"        
-[16] "downloaded"   "wiping"       "computer"     "also"         "opened"      
-[21] "firefox"      "account"      "save"         "information"  "demanded"    
-[26] "cell"         "phone"        "today"        "reinstalling" "everything"  
-[31] "see"          "two"          "files"        "saved"        "firefox"     
-[36] "gone"         "also"         "account"      "anything"     "saved"       
-[41] "regret"       "relying"      "password"     "fill"         "now"         
-[46] "locked"       "accounts"     "can"          "anything"     "done"        
-[1]  1  3 34 39 42
-[1] "export bookmarks saved anything relying"
-[1] "Getting rid of Duckduckgo I installed the Duckduckgo extension and decided after a week that I didn't want to use it any longer. I disabled the extension and in Preferences/Search selected Google to once again be my default search engine. But, when I do a search, Duckduckgo comes up as the default, and when I look in Preferences/Search it again shows as the default. I went back into extensions and totally removed Duckduckgo, reset Google again as the default but it reverts to Duckduckgo. I went into One-Click Search Engines and removed Duckduckgo, but then when I try to select my default search engine there are no search engines from which to choose. I clicked on Restore Default Search Engines but then I'm back to Duckduckgo being the default search engine. I've spent hours searching online with no success. How do I get rid of it and get Google back as my default? I'm using Firefox 82.0 on an iMac running Catalina. I updated to 82.0 hoping that might solve the issue, but no luck. "
- [1] "getting"     "rid"         "duckduckgo"  "installed"   "duckduckgo" 
- [6] "extension"   "decided"     "week"        "want"        "use"        
-[11] "longer"      "disabled"    "extension"   "preferences" "search"     
-[16] "selected"    "google"      "default"     "search"      "engine"     
-[21] "search"      "duckduckgo"  "comes"       "default"     "look"       
-[26] "preferences" "search"      "shows"       "default"     "went"       
-[31] "back"        "extensions"  "totally"     "removed"     "duckduckgo" 
-[36] "reset"       "google"      "default"     "reverts"     "duckduckgo" 
-[41] "went"        "one"         "click"       "search"      "engines"    
-[46] "removed"     "duckduckgo"  "try"         "select"      "default"    
-[51] "search"      "engine"      "search"      "engines"     "choose"     
-[56] "clicked"     "restore"     "default"     "search"      "engines"    
-[61] "back"        "duckduckgo"  "default"     "search"      "engine"     
-[66] "spent"       "hours"       "searching"   "online"      "success"    
-[71] "get"         "rid"         "get"         "google"      "back"       
-[76] "default"     "using"       "firefox"     "82.0"        "imac"       
-[81] "running"     "catalina"    "updated"     "82.0"        "hoping"     
-[86] "might"       "solve"       "issue"       "luck"       
-[1]  7 19 39 43 54
-[1] "decided search reverts click engines"
-# A tibble: 3 x 16
-       id created                   updated                  
-    <int> <chr>                     <chr>                    
-1 1309431 2020-10-20T16:00:49-07:00 2020-10-20T16:00:49-07:00
-2 1309432 2020-10-20T16:24:41-07:00 2020-10-20T16:45:30-07:00
-3 1309435 2020-10-20T16:52:50-07:00 2020-10-20T16:52:50-07:00
-  title                         
-  <chr>                         
-1 Yazıcı ön izleme sorunu.      
-2 export passwords and bookmarks
-3 Getting rid of Duckduckgo     
-  content                                                                       
-  <chr>                                                                         
-1 <p>Yazıcıdan çıktı almadan önce, ön izleme yaparak sayfayı ayarlamak istiyoru…
-2 <p>I had to send my computer in.  Before I did I downloaded file that saved A…
-3 <p>I installed the Duckduckgo extension and decided after a week that I didn'…
-  tags                                       product topic locale
-  <chr>                                      <chr>   <chr> <chr> 
-1 desktop;other;firefox-820;                 firefox other tr    
-2 desktop;beta;other;windows-10;firefox-820; firefox other en-US 
-3 mac-os;desktop;other;firefox-820;          firefox other en-US 
-  answers          creator        x icon                       y os_colours
-  <chr>            <chr>      <int> <chr>                  <int> <chr>     
-1 <NA>             mrdrzoom       0 LOGOS/purple-logo.png      0 purple    
-2 1359859;1359865; oregon.pax    24 LOGOS/windows-logo.png     5 blue      
-3 <NA>             philmguy      52 LOGOS/macos-logo.png      10 black     
-  question                                           
-  <chr>                                              
-1 "bold(\"yazıcı önce yaparak opera bir\")"          
-2 "bold(\"export bookmarks saved anything relying\")"
-3 "bold(\"decided search reverts click engines\")"   
+[1] "firefox add on said my bookmarks would be saved. Theyve now disappeared. I want to go back to my original settings.  How can I remove the firefox update and go back to my original settings. (My computer did not work any faster).  Thankyou Philip Perry Hello. Two days ago i recieved an option from Firefox to click on to get firefox add on/update in order to speed up my computer. It said my bookmarks would be saved. However they have now disappeared. I wanted to delete the firefox update so I tried System Restore to go back to my original settings. However this did not work and I am still without my bookmarks. How can I remove the firefox update and go back to my original settings. (My computer did not work any faster).  Thankyou Philip Perry "
+ [1] "firefox"     "add"         "said"        "bookmarks"   "saved"      
+ [6] "theyve"      "now"         "disappeared" "want"        "go"         
+[11] "back"        "original"    "settings"    "can"         "remove"     
+[16] "firefox"     "update"      "go"          "back"        "original"   
+[21] "settings"    "computer"    "work"        "faster"      "thankyou"   
+[26] "philip"      "perry"       "hello"       "two"         "days"       
+[31] "ago"         "recieved"    "option"      "firefox"     "click"      
+[36] "get"         "firefox"     "add"         "update"      "order"      
+[41] "speed"       "computer"    "said"        "bookmarks"   "saved"      
+[46] "however"     "now"         "disappeared" "wanted"      "delete"     
+[51] "firefox"     "update"      "tried"       "system"      "restore"    
+[56] "go"          "back"        "original"    "settings"    "however"    
+[61] "work"        "still"       "without"     "bookmarks"   "can"        
+[66] "remove"      "firefox"     "update"      "go"          "back"       
+[71] "original"    "settings"    "computer"    "work"        "faster"     
+[76] "thankyou"    "philip"      "perry"      
+[1]  8 11 39 47 65
+[1] "disappeared back update now can"
+[1] "Logins and passwords still not saved For some strange reason Firefox is not logging me into my favorite websites automatically any more. I have to manually log in every time. The websites' login pages are automatically filled when I move the cursor to the Username and Password fields, but I still have to click Log In.  As soon as I log out and log in I am asked to \"Sign In\" again.  I tried manually adding a website to the \"Saved Logins\" but that did not help. Using Windows 10 64bit. "
+ [1] "logins"        "passwords"     "still"         "saved"        
+ [5] "strange"       "reason"        "firefox"       "logging"      
+ [9] "favorite"      "websites"      "automatically" "manually"     
+[13] "log"           "every"         "time"          "websites"     
+[17] "login"         "pages"         "automatically" "filled"       
+[21] "move"          "cursor"        "username"      "password"     
+[25] "fields"        "still"         "click"         "log"          
+[29] "soon"          "log"           "log"           "asked"        
+[33] "sign"          "tried"         "manually"      "adding"       
+[37] "website"       "saved"         "logins"        "help"         
+[41] "using"         "windows"       "10"            "64bit"        
+[1]  1  3 34 38 42
+[1] "logins still tried saved windows"
+[1] "bookmarks How can I get back the bookmarks that were deleted on the recent upgrade? I've tried system restore to the day before the upgrade, but the folder is empty and the new \"bookmark\" process is a mess. I'd hate to lose the many references stored in the previous collection. "
+ [1] "bookmarks"  "can"        "get"        "back"       "bookmarks" 
+ [6] "deleted"    "recent"     "upgrade"    "tried"      "system"    
+[11] "restore"    "day"        "upgrade"    "folder"     "empty"     
+[16] "new"        "bookmark"   "process"    "mess"       "hate"      
+[21] "lose"       "many"       "references" "stored"     "previous"  
+[26] "collection"
+[1]  1  7 11 25 26
+[1] "bookmarks recent restore previous collection"
+[1] "bookmarks I TRIED EVERYTHING TO FIND MY BOOKMARKS FROM FIREFOX BACK IN SEPT.2020 DOES ANYONE KNOW A SURE WAY TO RESTORE THEM  AGAIN "
+ [1] "bookmarks"  "tried"      "everything" "find"       "bookmarks" 
+ [6] "firefox"    "back"       "sept"       "2020"       "anyone"    
+[11] "know"       "sure"       "way"        "restore"   
+[1] 2 3 4 6 9
+[1] "tried everything find firefox 2020"
+[1] "Recovery of bookmarks from mobile browser after desktop formatting I managed to explode my computer this weekend and I lost, among other things, my bookmarks in Firefox. They can't be recovered from windows.old as Windows somehow decided to replace the old windows.old by a new one with nothing useful in it. I still have all my bookmarks in my account, though, which I know from looking at my Android phone. Now, I'm just scared that if I sync, they will get deleted from my phone instead of synced back to my computer. I could not find any specific answer to this; can someone help me? Do I have anything to do to make sure it goes the right way? Thanks! "
+ [1] "recovery"    "bookmarks"   "mobile"      "browser"     "desktop"    
+ [6] "formatting"  "managed"     "explode"     "computer"    "weekend"    
+[11] "lost"        "among"       "things"      "bookmarks"   "firefox"    
+[16] "recovered"   "windows.old" "windows"     "somehow"     "decided"    
+[21] "replace"     "old"         "windows.old" "new"         "one"        
+[26] "nothing"     "useful"      "still"       "bookmarks"   "account"    
+[31] "though"      "know"        "looking"     "android"     "phone"      
+[36] "now"         "just"        "scared"      "sync"        "get"        
+[41] "deleted"     "phone"       "instead"     "synced"      "back"       
+[46] "computer"    "find"        "specific"    "answer"      "can"        
+[51] "someone"     "help"        "anything"    "make"        "sure"       
+[56] "goes"        "right"       "way"         "thanks"     
+[1] 16 28 45 48 58
+[1] "recovered still back specific way"
+[1] "corrupted update 10/20/20  I clicked on the update button last night - running 81.0, and the update was for 81.0.2.  When  I went to open the browser all that I got was a line at the top - FF would not open.  I backed up the profile, and did a clean install.  When I finally got the backed up profile installed, it opened properly once and everything was there. When I opened it again, no book marks, and none of the buttons worked.  FF didn't close properly, and I had to use Task Manager to shut down. I ended up downloading the beta version, and it's worked just fine.  The original profile works, so all bookmarks are there. I see that FF released 82.0 this morning.  Is it safe to try to install it, or is the beta version that I installed last night really 82, just hours before it was officially released? "
+ [1] "corrupted"   "update"      "10"          "20"          "20"         
+ [6] "clicked"     "update"      "button"      "last"        "night"      
+[11] "running"     "81.0"        "update"      "81.0.2"      "went"       
+[16] "open"        "browser"     "got"         "line"        "top"        
+[21] "ff"          "open"        "backed"      "profile"     "clean"      
+[26] "install"     "finally"     "got"         "backed"      "profile"    
+[31] "installed"   "opened"      "properly"    "everything"  "opened"     
+[36] "book"        "marks"       "none"        "buttons"     "worked"     
+[41] "ff"          "close"       "properly"    "use"         "task"       
+[46] "manager"     "shut"        "ended"       "downloading" "beta"       
+[51] "version"     "worked"      "just"        "fine"        "original"   
+[56] "profile"     "works"       "bookmarks"   "see"         "ff"         
+[61] "released"    "82.0"        "morning"     "safe"        "try"        
+[66] "install"     "beta"        "version"     "installed"   "last"       
+[71] "night"       "really"      "82"          "just"        "hours"      
+[76] "officially"  "released"   
+[1] 17 25 27 32 77
+[1] "browser clean finally opened released"
+[1] "free download why is it taking so long to download firefox as my primary browser "
+[1] "free"     "download" "taking"   "long"     "download" "firefox"  "primary" 
+[8] "browser" 
+[1] 1 3 5 6 8
+[1] "free taking download firefox browser"
+[1] "Outlook Won't Load After Logging In - \"Repeating Redirects Detected\" I'm unable to login to Outlook through Firefox on my desktop - Chrome works fine, and I'm not having issues when logging in to Outlook on my laptop using Firefox. After entering my username and password, I see a white page with \"Working...\" flickering on the tab, then a \"X-Redir-Error\" pops up. I have tried updating and restarting Firefox, clearing cookies, and using a private window - I was walked through troubleshooting steps by IT at my school as well, but it seems very clear that the issue is with the Firefox browser, and not my Outlook account. Any other suggestions to fix? Thank you! "
+ [1] "outlook"         "load"            "logging"         "repeating"      
+ [5] "redirects"       "detected"        "unable"          "login"          
+ [9] "outlook"         "firefox"         "desktop"         "chrome"         
+[13] "works"           "fine"            "issues"          "logging"        
+[17] "outlook"         "laptop"          "using"           "firefox"        
+[21] "entering"        "username"        "password"        "see"            
+[25] "white"           "page"            "working"         "flickering"     
+[29] "tab"             "x"               "redir"           "error"          
+[33] "pops"            "tried"           "updating"        "restarting"     
+[37] "firefox"         "clearing"        "cookies"         "using"          
+[41] "private"         "window"          "walked"          "troubleshooting"
+[45] "steps"           "school"          "well"            "seems"          
+[49] "clear"           "issue"           "firefox"         "browser"        
+[53] "outlook"         "account"         "suggestions"     "fix"            
+[57] "thank"          
+[1] 10 15 27 36 56
+[1] "firefox issues working restarting fix"
+[1] "password reveal via history link recall? I just discovered a gigantic security flaw.  If I go back in my history, I can pull up a website such as Experian credit boost. When I pull it up, The logon screen appears and I can see the number of digits that my password contains.  NOW I thought that was very bad, however, I can click on the eyeball and the password is fully revealed.  what is this about??  I mean anyone with access to this history link can get my password???   As a lifelong insurance man, I am very paranoid about security but broke down and started using Lockwise.  Does that have anything to do with it?  Need help immediatly. "
+ [1] "password"   "reveal"     "via"        "history"    "link"      
+ [6] "recall"     "just"       "discovered" "gigantic"   "security"  
+[11] "flaw"       "go"         "back"       "history"    "can"       
+[16] "pull"       "website"    "experian"   "credit"     "boost"     
+[21] "pull"       "logon"      "screen"     "appears"    "can"       
+[26] "see"        "number"     "digits"     "password"   "contains"  
+[31] "now"        "thought"    "bad"        "however"    "can"       
+[36] "click"      "eyeball"    "password"   "fully"      "revealed"  
+[41] "mean"       "anyone"     "access"     "history"    "link"      
+[46] "can"        "get"        "password"   "lifelong"   "insurance" 
+[51] "man"        "paranoid"   "security"   "broke"      "started"   
+[56] "using"      "lockwise"   "anything"   "need"       "help"      
+[61] "immediatly"
+[1] 20 21 30 53 58
+[1] "boost pull contains security anything"
+[1] "lost bookmarks Locking this thread.Please continue here: [/questions/1309336] 2 days ago i clicked a firefox add on to speed up my computer.  It has removed my bookmarks and toolbar access for my emails. So I want to remove this add on.  Ive found a option called firefox default setting but will this again remove my bookmarks etc. I just want to go back to where my computer was before this add on- which didnt even speed up my system - so I can restore my data. Philip "
+ [1] "lost"          "bookmarks"     "locking"       "thread.please"
+ [5] "continue"      "questions"     "1309336"       "2"            
+ [9] "days"          "ago"           "clicked"       "firefox"      
+[13] "add"           "speed"         "computer"      "removed"      
+[17] "bookmarks"     "toolbar"       "access"        "emails"       
+[21] "want"          "remove"        "add"           "ive"          
+[25] "found"         "option"        "called"        "firefox"      
+[29] "default"       "setting"       "remove"        "bookmarks"    
+[33] "etc"           "just"          "want"          "go"           
+[37] "back"          "computer"      "add"           "didnt"        
+[41] "even"          "speed"         "system"        "can"          
+[45] "restore"       "data"          "philip"       
+[1]  1  6  9 31 38
+[1] "lost questions days remove computer"
+# A tibble: 10 x 16
+        id created                   updated                  
+     <int> <chr>                     <chr>                    
+ 1 1309336 2020-10-20T07:00:45-07:00 2020-10-20T09:38:19-07:00
+ 2 1309337 2020-10-20T07:01:15-07:00 2020-10-20T08:46:24-07:00
+ 3 1309338 2020-10-20T07:07:07-07:00 2020-10-20T09:40:14-07:00
+ 4 1309339 2020-10-20T07:08:21-07:00 2020-10-20T09:26:36-07:00
+ 5 1309340 2020-10-20T07:17:21-07:00 2020-10-20T07:17:21-07:00
+ 6 1309341 2020-10-20T07:23:55-07:00 2020-10-20T16:32:25-07:00
+ 7 1309342 2020-10-20T07:26:13-07:00 2020-10-20T09:21:11-07:00
+ 8 1309343 2020-10-20T07:31:57-07:00 2020-10-20T07:31:57-07:00
+ 9 1309346 2020-10-20T07:47:23-07:00 2020-10-20T07:47:23-07:00
+10 1309347 2020-10-20T07:56:03-07:00 2020-10-20T07:56:03-07:00
+   title                                                                        
+   <chr>                                                                        
+ 1 "firefox add on said my bookmarks would be saved. Theyve now disappeared. I …
+ 2 "Logins and passwords still not saved"                                       
+ 3 "bookmarks"                                                                  
+ 4 "bookmarks"                                                                  
+ 5 "Recovery of bookmarks from mobile browser after desktop formatting"         
+ 6 "corrupted update"                                                           
+ 7 "free download"                                                              
+ 8 "Outlook Won't Load After Logging In - \"Repeating Redirects Detected\""     
+ 9 "password reveal via history link recall?"                                   
+10 "lost bookmarks"                                                             
+   content                                                                      
+   <chr>                                                                        
+ 1 "<p>Hello. Two days ago i recieved an option from Firefox to click on to get…
+ 2 "<p>For some strange reason Firefox is not logging me into my favorite websi…
+ 3 "<p>How can I get back the bookmarks that were deleted on the recent upgrade…
+ 4 "<p>I TRIED EVERYTHING TO FIND MY BOOKMARKS FROM FIREFOX BACK IN SEPT.2020 D…
+ 5 "<p>I managed to explode my computer this weekend and I lost, among other th…
+ 6 "<p>10/20/20  </p><p>I clicked on the update button last night - running 81.…
+ 7 "<p>why is it taking so long to download firefox as my primary browser </p>" 
+ 8 "<p>I'm unable to login to Outlook through Firefox on my desktop - Chrome wo…
+ 9 "<p>I just discovered a gigantic security flaw.  If I go back in my history,…
+10 "<p><i>Locking this thread.</i><br><i>Please continue here: [<a href=\"/ques…
+   tags                                                                         
+   <chr>                                                                        
+ 1 windows-7;desktop;other;firefox-810;                                         
+ 2 desktop;websites;windows-10;firefox-810;firefox-8102;                        
+ 3 desktop;bookmarks;windows-10;firefox-810;                                    
+ 4 desktop;beta;other;windows-10;firefox-820;                                   
+ 5 desktop;sync;windows-10;firefox-810;firefox-8102;                            
+ 6 desktop;beta;download-and-install;download-and-install_1;escalate;windows-10…
+ 7 desktop;download-and-install_1;                                              
+ 8 desktop;beta;fix-problems;windows-10;firefox-820;                            
+ 9 desktop;privacy-and-security_1;windows-10;firefox-810;                       
+10 windows-7;desktop;other;firefox-810;                                         
+   product topic                locale
+   <chr>   <chr>                <chr> 
+ 1 firefox other                en-US 
+ 2 firefox websites             en-US 
+ 3 firefox bookmarks            en-US 
+ 4 firefox other                en-US 
+ 5 firefox sync                 en-US 
+ 6 firefox download-and-install en-US 
+ 7 firefox download-and-install en-US 
+ 8 firefox fix-problems         en-US 
+ 9 firefox privacy-and-security en-US 
+10 firefox other                en-US 
+   answers                                                  creator          x
+   <chr>                                                    <chr>        <int>
+ 1 1359703;1359710;                                         philipgperry     0
+ 2 1359687;                                                 steenwinther     1
+ 3 1359702;1359711;                                         e_schorr         7
+ 4 1359701;                                                 vino103054       8
+ 5 <NA>                                                     jpcoteangers    17
+ 6 1359700;1359753;1359761;1359766;1359811;1359845;1359856; finepoint       23
+ 7 1359697;                                                 mamabear918     26
+ 8 <NA>                                                     hubcap.moon     31
+ 9 <NA>                                                     benjamincola    47
+10 <NA>                                                     philipgperry    56
+   icon                       y os_colours
+   <chr>                  <int> <chr>     
+ 1 LOGOS/windows-logo.png     0 blue      
+ 2 LOGOS/windows-logo.png     5 blue      
+ 3 LOGOS/windows-logo.png    10 blue      
+ 4 LOGOS/windows-logo.png    15 blue      
+ 5 LOGOS/windows-logo.png    20 blue      
+ 6 LOGOS/windows-logo.png    25 blue      
+ 7 LOGOS/purple-logo.png     30 purple    
+ 8 LOGOS/windows-logo.png    35 blue      
+ 9 LOGOS/windows-logo.png    40 blue      
+10 LOGOS/windows-logo.png    45 blue      
+   question                                                
+   <chr>                                                   
+ 1 "bold(\"disappeared back update now can\")"             
+ 2 "bold(\"logins still tried saved windows\")"            
+ 3 "bold(\"bookmarks recent restore previous collection\")"
+ 4 "bold(\"tried everything find firefox 2020\")"          
+ 5 "bold(\"recovered still back specific way\")"           
+ 6 "bold(\"browser clean finally opened released\")"       
+ 7 "bold(\"free taking download firefox browser\")"        
+ 8 "bold(\"firefox issues working restarting fix\")"       
+ 9 "bold(\"boost pull contains security anything\")"       
+10 "bold(\"lost questions days remove computer\")"         
