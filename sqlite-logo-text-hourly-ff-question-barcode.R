@@ -125,7 +125,7 @@ main <- function() {
     geom_image(aes(image = icon)) +
     geom_label_repel(aes(label = question, colour = os_colours),
               vjust = "inward", hjust = "inward", parse = TRUE,
-              nudge_y = 2.2, nudge_x = -8, size = 2) +
+              nudge_y = 2.5, nudge_x = -8, size = 3) +
     scale_colour_identity() +
     theme_void() + expand_limits(y = c(0, 60), x = c(0, 60))
   png_filename <- sprintf("logo-text-hour-%2.2d-%s.png",
